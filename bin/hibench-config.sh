@@ -23,12 +23,12 @@ this="$bin/$script"
 export HIBENCH_VERSION="4.0"
 
 ###################### Global Paths ##################
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-export HADOOP_HOME=/usr/local/hadoop
+export JAVA_HOME=${JAVA_HOME}
+export HADOOP_HOME=/usr/lib/hadoop
 export HADOOP_EXECUTABLE=${HADOOP_HOME}/bin/hadoop
-export HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop
-export HADOOP_EXAMPLES_JAR=${HADOOP_HOME}/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.1.jar
-export MAPRED_EXECUTABLE=${HADOOP}/bin/mapred
+export HADOOP_CONF_DIR=${HADOOP_HOME}/etc/hadoop
+export HADOOP_EXAMPLES_JAR=/usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar
+export MAPRED_EXECUTABLE=/usr/lib/hadoop-mapreduce/bin/mapred
 #Set the varaible below only in YARN mode
 export HADOOP_JOBCLIENT_TESTS_JAR=
 
