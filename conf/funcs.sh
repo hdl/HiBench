@@ -65,8 +65,8 @@ function gen_report() {
     fi
 
     printf "$FORMATS" $type $(date +%F) $(date +%T) $size $duration $tput $tput_node >> $HIBENCH_REPORT
+    sudo su hdfs -c "hadoop dfsadmin -report" | grep available >>$HIBENCH_REPORT
     cat $HIBENCH_REPORT | mail -s $type maoze365@gmail.com
-    ls | mail -s $type maoze365@gmail.com
 }
 
 function check_dir() {
