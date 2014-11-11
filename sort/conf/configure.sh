@@ -30,7 +30,7 @@ fi
 
 # for prepare (per node) - 24G/node
 #DATASIZE=24000000000
-DATASIZE=16000000000
+DATASIZE=4000000000
 NUM_MAPS=16
 
 # for running (in total)
